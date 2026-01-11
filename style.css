@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--grey-900);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1F1F1F;
+    max-height: 650px;
+    max-width: 420px;
+    height: 90%;
+    width: 90%;
+    border-radius: 11px;
+    margin: 60px;
+    padding-bottom: 25px;
+}
+
+img {
+    border-radius: 100px;
+    width: 100px;
+    margin: 25px;
+}
+
+.h1 {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+}
+
+.para {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.para2 {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.social-links a {
+    background-color: #333333;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 11px;
+    margin: 13px;
+    padding: 0 18px;
+    width: 300px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--green);
+    transform: scale(1.05);
+    color: #1F1F1F;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--grey-700);
+    margin-top: 50px;
+
+}
+
+.attribution a {
+    color: var(--grey-700);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        margin: 15px;
+        padding-bottom: 16px;
+    }
+
+    img {
+        width: 90px;
+        margin: 20px;
+    }
+
+    .h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .para {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .para2 {
+        font-size: 0.95rem;
+        margin: 10px 16px;
+    }
+
+    .social-links a {
+        width: 100%;
+        max-width: 280px;
+        height: 48px;
+        margin: 10px auto;
+        font-size: 14px;
+    }
+
+    .attribution {
+        font-size: 10px;
+        margin-top: 16px;
+    }
+}
